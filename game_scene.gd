@@ -6,6 +6,7 @@ var timer: Timer
 func _ready():
 	sprite3d = $Pestaneo
 	timer = $Timer
+	sprite3d.visible = false
 
 	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
 
