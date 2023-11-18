@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyrhe8wqfud56"]
+[gd_scene load_steps=21 format=3 uid="uid://cyrhe8wqfud56"]
 
 [ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
 [ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
@@ -6,6 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://03g2k5tfucin" path="res://Assets/1. - 3D art/textures/Suelo.png" id="3_mnufa"]
 [ext_resource type="ArrayMesh" uid="uid://c7bknxad6rkvh" path="res://Assets/1. - 3D art/Suelo.obj" id="4_e8xgb"]
 [ext_resource type="Texture2D" uid="uid://dunlgs1u743u8" path="res://Assets/2. - PixelArt/Pestaneo.png" id="6_wjwpp"]
+[ext_resource type="Texture2D" uid="uid://bc20530552rrq" path="res://Assets/2. - PixelArt/Alfombra.png" id="6_ykqg2"]
+[ext_resource type="ArrayMesh" uid="uid://b88ah2e3jf8ji" path="res://Assets/1. - 3D art/alfombra.obj" id="7_e3hvl"]
+[ext_resource type="ArrayMesh" uid="uid://c843ij2gq5o86" path="res://Assets/1. - 3D art/barracortina.obj" id="8_rb1sl"]
+[ext_resource type="ArrayMesh" uid="uid://ck6cn53h5e7qm" path="res://Assets/1. - 3D art/cortinas.obj" id="9_wd3xb"]
+[ext_resource type="ArrayMesh" uid="uid://c1vsvyiojbghx" path="res://Assets/1. - 3D art/lampara.obj" id="10_bci1r"]
+[ext_resource type="ArrayMesh" uid="uid://b3lp4u1tf8spn" path="res://Assets/1. - 3D art/mesilla.obj" id="11_gxifn"]
+[ext_resource type="ArrayMesh" uid="uid://crvn2ad0h8hr5" path="res://Assets/1. - 3D art/mesilla_jarron.obj" id="12_c2jyd"]
+[ext_resource type="ArrayMesh" uid="uid://10j722hiqp0s" path="res://Assets/1. - 3D art/sofa.obj" id="13_nebqt"]
+[ext_resource type="ArrayMesh" uid="uid://dpec340hcpa11" path="res://Assets/1. - 3D art/torre gatos.obj" id="14_vgfmr"]
+[ext_resource type="ArrayMesh" uid="uid://cfl8p3ux1h8bl" path="res://Assets/1. - 3D art/valla.obj" id="15_sr131"]
+[ext_resource type="ArrayMesh" uid="uid://doslwh0qfujf7" path="res://Assets/1. - 3D art/camara.obj" id="17_5n61d"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0nn2"]
 albedo_texture = ExtResource("1_87lkw")
@@ -16,6 +27,9 @@ texture_filter = 0
 albedo_texture = ExtResource("3_mnufa")
 uv1_scale = Vector3(8, 8, 8)
 texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwsql"]
+albedo_texture = ExtResource("6_ykqg2")
 
 [node name="game_scene" type="Node"]
 script = ExtResource("1_vnk17")
@@ -40,9 +54,62 @@ material_override = SubResource("StandardMaterial3D_ysu0w")
 mesh = ExtResource("4_e8xgb")
 skeleton = NodePath("../..")
 
+[node name="Alfombra" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.314915, 0, -1)
+material_override = SubResource("StandardMaterial3D_hwsql")
+mesh = ExtResource("7_e3hvl")
+skeleton = NodePath("../..")
+
+[node name="Barracortina" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.404643, 0.138323, -1.00411)
+mesh = ExtResource("8_rb1sl")
+skeleton = NodePath("../..")
+
+[node name="Cortinas" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.412859, 0.127128, -0.996385)
+mesh = ExtResource("9_wd3xb")
+skeleton = NodePath("../..")
+
+[node name="Lampara" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.494921, -0.0128523, -1.16227)
+mesh = ExtResource("10_bci1r")
+skeleton = NodePath("../..")
+
+[node name="Mesilla" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625654, 0, -1.07477)
+mesh = ExtResource("11_gxifn")
+skeleton = NodePath("../..")
+
+[node name="MesillaJarron" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.279502, 0, -1.28699)
+mesh = ExtResource("12_c2jyd")
+skeleton = NodePath("../..")
+
+[node name="Sofa" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41169, 0, -0.888429)
+mesh = ExtResource("13_nebqt")
+skeleton = NodePath("../..")
+
+[node name="TorreGatos" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.400814, 0, -1.1313)
+mesh = ExtResource("14_vgfmr")
+skeleton = NodePath("../..")
+
+[node name="Valla" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.466509, 0, -0.985097)
+mesh = ExtResource("15_sr131")
+skeleton = NodePath("../..")
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 7.0
 
 [node name="Pestaneo" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.453969, 0.00947285)
+visible = false
 texture = ExtResource("6_wjwpp")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+
+[node name="Camara" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00408839, 0.344844, -0.994325)
+mesh = ExtResource("17_5n61d")
