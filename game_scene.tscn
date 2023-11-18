@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyrhe8wqfud56"]
+[gd_scene load_steps=9 format=3 uid="uid://ccg0abxy0tlx7"]
 
 [ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
 [ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
