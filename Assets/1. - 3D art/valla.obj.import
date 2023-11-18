@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfl8p3ux1h8bl"
+path="res://.godot/imported/valla.obj-23a96a443740c623ef3c407ddefe44dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/valla.obj-23a96a443740c623ef3c407ddefe44dd.mesh"]
+
+source_file="res://Assets/1. - 3D art/valla.obj"
+dest_files=["res://.godot/imported/valla.obj-23a96a443740c623ef3c407ddefe44dd.mesh", "res://.godot/imported/valla.obj-23a96a443740c623ef3c407ddefe44dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

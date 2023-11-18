@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpec340hcpa11"
+path="res://.godot/imported/torre gatos.obj-78499937db5c6d00ae5a59e6858e5eef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/torre gatos.obj-78499937db5c6d00ae5a59e6858e5eef.mesh"]
+
+source_file="res://Assets/1. - 3D art/torre gatos.obj"
+dest_files=["res://.godot/imported/torre gatos.obj-78499937db5c6d00ae5a59e6858e5eef.mesh", "res://.godot/imported/torre gatos.obj-78499937db5c6d00ae5a59e6858e5eef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
