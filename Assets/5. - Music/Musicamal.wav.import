@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c3tard4fvb8c8"
+path="res://.godot/imported/Musicamal.wav-8c15ab28d18cc8a5936d927f0ad6746a.sample"
+
+[deps]
+
+source_file="res://Assets/5. - Music/Musicamal.wav"
+dest_files=["res://.godot/imported/Musicamal.wav-8c15ab28d18cc8a5936d927f0ad6746a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

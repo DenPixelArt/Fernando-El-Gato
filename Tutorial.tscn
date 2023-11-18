@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://06vs5xrc2lxa"]
+
+[ext_resource type="Script" path="res://CanvasLayerTuto.gd" id="1_j8fiy"]
+[ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_x7noo"]
+
+[node name="Node" type="Node"]
+
+[node name="CanvasLayerTuto" type="CanvasLayer" parent="."]
+script = ExtResource("1_j8fiy")
+
+[node name="tuto" type="Control" parent="CanvasLayerTuto"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_x7noo")
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayerTuto/tuto"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -1.0
+offset_right = -3.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayerTuto/tuto/CenterContainer"]
+custom_minimum_size = Vector2(960, 800)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "¡es momento de sacar fotos
+a tu gato Fernando!
+
+Intenta sacarle una foto cuando 
+haga algo gracioso con el 
+botón .
+
+cada 5 segundos pestañearás 
+automáticamente durante 2 segundos. 
+Puedes pestañear antes de tiempo 
+con el botón .
+
+Así podrás tener la vista descansada
+Para cuando Fernando haga de las
+suyas.
+"

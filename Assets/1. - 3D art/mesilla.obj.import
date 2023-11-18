@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3lp4u1tf8spn"
+path="res://.godot/imported/mesilla.obj-c94e33ed9ac1ae2a122bd68a358e8257.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mesilla.obj-c94e33ed9ac1ae2a122bd68a358e8257.mesh"]
+
+source_file="res://Assets/1. - 3D art/mesilla.obj"
+dest_files=["res://.godot/imported/mesilla.obj-c94e33ed9ac1ae2a122bd68a358e8257.mesh", "res://.godot/imported/mesilla.obj-c94e33ed9ac1ae2a122bd68a358e8257.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

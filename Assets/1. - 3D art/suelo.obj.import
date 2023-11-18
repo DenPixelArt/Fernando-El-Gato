@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7bknxad6rkvh"
+path="res://.godot/imported/suelo.obj-f03082dd0c0d9713fe72d3d5cc115fea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/suelo.obj-f03082dd0c0d9713fe72d3d5cc115fea.mesh"]
+
+source_file="res://Assets/1. - 3D art/suelo.obj"
+dest_files=["res://.godot/imported/suelo.obj-f03082dd0c0d9713fe72d3d5cc115fea.mesh", "res://.godot/imported/suelo.obj-f03082dd0c0d9713fe72d3d5cc115fea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

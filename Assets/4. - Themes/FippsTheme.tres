@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bhosvv1c5ftxw"]
+
+[ext_resource type="FontFile" uid="uid://dlm8qio74v8as" path="res://Assets/3. - Fonts/Fipps-Regular.otf" id="1_l58hn"]
+
+[resource]
+default_font = ExtResource("1_l58hn")
+default_font_size = 48

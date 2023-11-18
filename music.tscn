@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4d8egt61ff8n"]
+
+[ext_resource type="AudioStream" uid="uid://c3tard4fvb8c8" path="res://Assets/5. - Music/Musicamal.wav" id="1_4hvv5"]
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = ExtResource("1_4hvv5")
+volume_db = -17.0
+autoplay = true
