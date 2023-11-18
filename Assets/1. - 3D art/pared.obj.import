@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cjwjrms7dfcqu"
-path="res://.godot/imported/pared.obj-88038388e74270ccb40fb0207da3f592.mesh"
+path="res://.godot/imported/Pared.obj-bc6feaf0bfbca99ee093bb0fd59eadef.mesh"
 
 [deps]
 
-files=["res://.godot/imported/pared.obj-88038388e74270ccb40fb0207da3f592.mesh"]
+files=["res://.godot/imported/Pared.obj-bc6feaf0bfbca99ee093bb0fd59eadef.mesh"]
 
-source_file="res://Assets/1. - 3D art/pared.obj"
-dest_files=["res://.godot/imported/pared.obj-88038388e74270ccb40fb0207da3f592.mesh", "res://.godot/imported/pared.obj-88038388e74270ccb40fb0207da3f592.mesh"]
+source_file="res://Assets/1. - 3D art/Pared.obj"
+dest_files=["res://.godot/imported/Pared.obj-bc6feaf0bfbca99ee093bb0fd59eadef.mesh", "res://.godot/imported/Pared.obj-bc6feaf0bfbca99ee093bb0fd59eadef.mesh"]
 
 [params]
 
