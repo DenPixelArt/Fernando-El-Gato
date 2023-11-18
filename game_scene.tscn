@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://cyrhe8wqfud56"]
+
+[ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
+[ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
+[ext_resource type="ArrayMesh" uid="uid://cjwjrms7dfcqu" path="res://Assets/1. - 3D art/Pared.obj" id="2_adfub"]
+[ext_resource type="Texture2D" uid="uid://03g2k5tfucin" path="res://Assets/1. - 3D art/textures/Suelo.png" id="3_mnufa"]
+[ext_resource type="ArrayMesh" uid="uid://c7bknxad6rkvh" path="res://Assets/1. - 3D art/Suelo.obj" id="4_e8xgb"]
+[ext_resource type="Texture2D" uid="uid://dunlgs1u743u8" path="res://Assets/2. - PixelArt/Pestaneo.png" id="6_wjwpp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0nn2"]
+albedo_texture = ExtResource("1_87lkw")
+uv1_scale = Vector3(5, 5, 5)
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysu0w"]
+albedo_texture = ExtResource("3_mnufa")
+uv1_scale = Vector3(8, 8, 8)
+texture_filter = 0
+
+[node name="game_scene" type="Node"]
+script = ExtResource("1_vnk17")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 0.971977, 0.235074, 0, -0.235074, 0.971977, 0.360849, 0.797747, 0.689961)
+fov = 52.5
+
+[node name="habitacion" type="StaticBody3D" parent="."]
+
+[node name="Pared" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420293, 0, -1.00287)
+material_override = SubResource("StandardMaterial3D_k0nn2")
+mesh = ExtResource("2_adfub")
+skeleton = NodePath("../..")
+
+[node name="Suelo" type="MeshInstance3D" parent="habitacion"]
+transform = Transform3D(-4.37114e-08, 0, 1.1, 0, 1, 0, -1, 0, -4.80825e-08, 0.409142, 0, -1.02243)
+material_override = SubResource("StandardMaterial3D_ysu0w")
+mesh = ExtResource("4_e8xgb")
+skeleton = NodePath("../..")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.0
+
+[node name="Pestaneo" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.453969, -0.450786)
+texture = ExtResource("6_wjwpp")
