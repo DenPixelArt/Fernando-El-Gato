@@ -37,7 +37,7 @@ script = ExtResource("1_vnk17")
 [node name="Marker3D" type="Marker3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Marker3D"]
-transform = Transform3D(1, 0, 0, 0, 0.971977, 0.235074, 0, -0.235074, 0.971977, 0.360849, 0.797747, 0.689961)
+transform = Transform3D(1, 0, 0, 0, 0.971977, 0.235074, 0, -0.235074, 0.971977, 0.360849, 0.797747, 0.88181)
 fov = 52.5
 
 [node name="habitacion" type="StaticBody3D" parent="."]
@@ -61,12 +61,12 @@ mesh = ExtResource("7_e3hvl")
 skeleton = NodePath("../..")
 
 [node name="Barracortina" type="MeshInstance3D" parent="habitacion"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.404643, 0.138323, -1.00411)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.422712, 0.138323, -1.00411)
 mesh = ExtResource("8_rb1sl")
 skeleton = NodePath("../..")
 
 [node name="Cortinas" type="MeshInstance3D" parent="habitacion"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.412859, 0.127128, -0.996385)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.430927, 0.127128, -0.996385)
 mesh = ExtResource("9_wd3xb")
 skeleton = NodePath("../..")
 
@@ -104,12 +104,9 @@ skeleton = NodePath("../..")
 wait_time = 7.0
 
 [node name="Pestaneo" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.453969, 0.00947285)
-visible = false
+transform = Transform3D(0.999867, 0.0147283, 0.00697068, -0.0156816, 0.985986, 0.166089, -0.00442629, -0.166176, 0.986086, 0, 0.453969, 0.304884)
 texture = ExtResource("6_wjwpp")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-
 [node name="Camara" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00408839, 0.344844, -0.994325)
+transform = Transform3D(0.977849, 0.0334036, -0.206629, 0, 0.987184, 0.159588, 0.209311, -0.156053, 0.965317, 0.429778, -0.174662, -2.36031)
 mesh = ExtResource("17_5n61d")

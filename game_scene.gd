@@ -1,16 +1,18 @@
 extends Node
 
 var sprite3d: Sprite3D
+var camera: Camera3D
 var timer: Timer
 
 func _ready():
 	sprite3d = $Pestaneo
 	timer = $Timer
+	camera = $Marker3D/Camera3D
 	sprite3d.visible = false
 
 	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
 
-	timer.start()
+	timer.start()    
 
 func _on_timer_timeout():
 	sprite3d.visible = true
