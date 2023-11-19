@@ -5,6 +5,7 @@ var camarafotos
 var timerviendo: Timer
 var timerpestaneando: Timer
 var timergame: Timer 
+var onesec: Timer
 
 func _ready():
 	pestanas = $Pestaneo
@@ -12,10 +13,12 @@ func _ready():
 	timerpestaneando = $TimerPestaneo
 	timergame = $TimerGame
 	camarafotos = $habitacion/CamaraFotos
+	onesec = $OneSec
 	pestanas.visible = true
 	camarafotos.visible = false
 	
 func start_game():
+	onesec.start()
 	pestanas.visible = false
 	camarafotos.visible = true
 	timerviendo.start()

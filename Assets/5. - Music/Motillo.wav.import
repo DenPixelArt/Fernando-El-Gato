@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bo21o7wjlqek"
+path="res://.godot/imported/Motillo.wav-581320c858e0a2349ba8bc9fd143898d.sample"
+
+[deps]
+
+source_file="res://Assets/5. - Music/Motillo.wav"
+dest_files=["res://.godot/imported/Motillo.wav-581320c858e0a2349ba8bc9fd143898d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
