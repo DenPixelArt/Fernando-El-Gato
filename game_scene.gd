@@ -9,7 +9,7 @@ func _ready():
 	pestanas = $Pestaneo
 	timerviendo = $TimerViendo
 	timerpestaneando = $TimerPestaneo
-	camarafotos = $CamaraFotos
+	camarafotos = $habitacion/CamaraFotos
 	pestanas.visible = true
 	camarafotos.visible = false
 	

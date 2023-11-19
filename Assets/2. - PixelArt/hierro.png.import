@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buhn7oylof3fr"
-path.s3tc="res://.godot/imported/sofa.png-07d28f1d507d3c160ea5df0216e34a3f.s3tc.ctex"
+uid="uid://hpsjt1cj7k61"
+path.s3tc="res://.godot/imported/hierro.png-75b8c0702d30e3b0d5374b9201cbe4f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/2. - PixelArt/sofa.png"
-dest_files=["res://.godot/imported/sofa.png-07d28f1d507d3c160ea5df0216e34a3f.s3tc.ctex"]
+source_file="res://Assets/2. - PixelArt/hierro.png"
+dest_files=["res://.godot/imported/hierro.png-75b8c0702d30e3b0d5374b9201cbe4f5.s3tc.ctex"]
 
 [params]
 
