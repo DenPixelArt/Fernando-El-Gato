@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://owdbnsv76p7i"
-path="res://.godot/imported/Motillo.wav-581320c858e0a2349ba8bc9fd143898d.sample"
+uid="uid://fet5yjrecqi5"
+path="res://.godot/imported/Sierra.wav-37d32fcc41cd45c22ed4133dc4187349.sample"
 
 [deps]
 
-source_file="res://Assets/5. - Music/Motillo.wav"
-dest_files=["res://.godot/imported/Motillo.wav-581320c858e0a2349ba8bc9fd143898d.sample"]
+source_file="res://Assets/5. - Music/Sierra.wav"
+dest_files=["res://.godot/imported/Sierra.wav-37d32fcc41cd45c22ed4133dc4187349.sample"]
 
 [params]
 

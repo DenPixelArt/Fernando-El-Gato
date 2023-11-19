@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://cyrhe8wqfud56"]
+[gd_scene load_steps=55 format=3 uid="uid://cyrhe8wqfud56"]
 
 [ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
 [ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
@@ -339,7 +339,6 @@ _data = {
 }
 
 [sub_resource type="Animation" id="Animation_x58b6"]
-length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -347,10 +346,34 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 6, 7, 6, 7, 6, 7, 6, 7]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Motosierra:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0]
+"values": [6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Leyendo:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
 }
 
 [sub_resource type="Animation" id="Animation_i70wb"]
@@ -369,10 +392,95 @@ tracks/0/keys = {
 "values": [0, 1]
 }
 
+[sub_resource type="Animation" id="Animation_cnwhr"]
+resource_name = "motosierra"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Motosierra:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 6, 7, 6, 7, 6, 7, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_toxhm"]
+resource_name = "leyendo"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Leyendo:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 8, 9, 8, 9, 8, 9, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_6a5cc"]
+resource_name = "motocicleta"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 4, 5, 4, 5, 4, 5, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_djet6"]
+resource_name = "flor"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 10, 11, 10, 11, 10, 11, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_fkka0"]
+resource_name = "malabares"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fm8hr"]
 _data = {
 "RESET": SubResource("Animation_x58b6"),
-"idle": SubResource("Animation_i70wb")
+"flor": SubResource("Animation_djet6"),
+"idle": SubResource("Animation_i70wb"),
+"leyendo": SubResource("Animation_toxhm"),
+"malabares": SubResource("Animation_fkka0"),
+"motocicleta": SubResource("Animation_6a5cc"),
+"motosierra": SubResource("Animation_cnwhr")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_trcpt"]
@@ -660,9 +768,80 @@ texture_filter = 0
 texture = ExtResource("20_o68h3")
 hframes = 6
 vframes = 2
+frame = 6
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Gato/Idle"]
+[node name="AnimationPlayerIdle" type="AnimationPlayer" parent="Gato/Idle"]
 autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_fm8hr")
+}
+
+[node name="Motosierra" type="Sprite3D" parent="Gato"]
+transform = Transform3D(0.953775, 0, -0.300523, 0, 1, 0, 0.300523, 0, 0.953775, 1.0976, 0.612363, -0.924703)
+texture_filter = 0
+texture = ExtResource("20_o68h3")
+hframes = 6
+vframes = 2
+frame = 6
+
+[node name="AnimationPlayerMotosierra" type="AnimationPlayer" parent="Gato/Motosierra"]
+autoplay = "motosierra"
+libraries = {
+"": SubResource("AnimationLibrary_fm8hr")
+}
+
+[node name="Leyendo" type="Sprite3D" parent="Gato"]
+transform = Transform3D(0.884858, 0, 0.465862, 0, 1, 0, -0.465862, 0, 0.884858, -0.348413, 0.356053, -0.827245)
+texture_filter = 0
+texture = ExtResource("20_o68h3")
+hframes = 6
+vframes = 2
+frame = 8
+
+[node name="AnimationPlayerLeyendo" type="AnimationPlayer" parent="Gato/Leyendo"]
+autoplay = "leyendo"
+libraries = {
+"": SubResource("AnimationLibrary_fm8hr")
+}
+
+[node name="Motocicleta" type="Sprite3D" parent="Gato"]
+transform = Transform3D(0.960542, 0, -0.278136, 0, 1, 0, 0.278136, 0, 0.960542, 1.0019, 0.574676, -1.70509)
+texture_filter = 0
+texture = ExtResource("20_o68h3")
+hframes = 6
+vframes = 2
+frame = 6
+
+[node name="AnimationPlayerMotocicleta" type="AnimationPlayer" parent="Gato/Motocicleta"]
+autoplay = "motocicleta"
+libraries = {
+"": SubResource("AnimationLibrary_fm8hr")
+}
+
+[node name="Flor" type="Sprite3D" parent="Gato"]
+transform = Transform3D(0.87581, 0, 0.482656, 0, 1, 0, -0.482656, 0, 0.87581, -0.511182, 0.526015, -1.80719)
+texture_filter = 0
+texture = ExtResource("20_o68h3")
+hframes = 6
+vframes = 2
+frame = 6
+
+[node name="AnimationPlayerFlor" type="AnimationPlayer" parent="Gato/Flor"]
+autoplay = "flor"
+libraries = {
+"": SubResource("AnimationLibrary_fm8hr")
+}
+
+[node name="Malabares" type="Sprite3D" parent="Gato"]
+transform = Transform3D(0.868407, 0, -0.495853, 0, 1, 0, 0.495853, 0, 0.868407, 1.11801, 0.873111, -0.557288)
+texture_filter = 0
+texture = ExtResource("20_o68h3")
+hframes = 6
+vframes = 2
+frame = 6
+
+[node name="AnimationPlayerMalabares" type="AnimationPlayer" parent="Gato/Malabares"]
+autoplay = "malabares"
 libraries = {
 "": SubResource("AnimationLibrary_fm8hr")
 }
