@@ -376,6 +376,22 @@ tracks/2/keys = {
 "values": [8]
 }
 
+[sub_resource type="Animation" id="Animation_djet6"]
+resource_name = "flor"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 10, 11, 10, 11, 10, 11, 10, 11]
+}
+
 [sub_resource type="Animation" id="Animation_i70wb"]
 resource_name = "idle"
 loop_mode = 1
@@ -390,22 +406,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
-}
-
-[sub_resource type="Animation" id="Animation_cnwhr"]
-resource_name = "motosierra"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Motosierra:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [6, 7, 6, 7, 6, 7, 6, 7, 6, 7]
 }
 
 [sub_resource type="Animation" id="Animation_toxhm"]
@@ -424,6 +424,22 @@ tracks/0/keys = {
 "values": [8, 9, 8, 9, 8, 9, 8, 9, 8, 9]
 }
 
+[sub_resource type="Animation" id="Animation_fkka0"]
+resource_name = "malabares"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+}
+
 [sub_resource type="Animation" id="Animation_6a5cc"]
 resource_name = "motocicleta"
 loop_mode = 1
@@ -440,36 +456,20 @@ tracks/0/keys = {
 "values": [4, 5, 4, 5, 4, 5, 4, 5, 4, 5]
 }
 
-[sub_resource type="Animation" id="Animation_djet6"]
-resource_name = "flor"
+[sub_resource type="Animation" id="Animation_cnwhr"]
+resource_name = "motosierra"
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
+tracks/0/path = NodePath("../Motosierra:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [10, 11, 10, 11, 10, 11, 10, 11, 10, 11]
-}
-
-[sub_resource type="Animation" id="Animation_fkka0"]
-resource_name = "malabares"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+"values": [6, 7, 6, 7, 6, 7, 6, 7, 6, 7]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fm8hr"]
@@ -875,4 +875,5 @@ uppercase = true
 [connection signal="timeout" from="TimerPestaneo" to="." method="_on_timer_pestaneo_timeout"]
 [connection signal="start_game" from="tutorial" to="." method="start_game"]
 [connection signal="timeout" from="TimerGame" to="." method="_on_timer_game_timeout"]
+[connection signal="timeout" from="OneSec" to="." method="_on_one_sec_timeout"]
 [connection signal="timeout" from="OneSec" to="Timer60" method="_on_one_sec_timeout"]
