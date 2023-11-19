@@ -3,6 +3,7 @@ extends Sprite3D
 var onesec: Timer
 var nuevogato = 49
 var tiempo_restante: int
+var onplay: bool = false
 @onready var nodo_raiz = get_node("/root/game_scene")
 @onready var timersixty = nodo_raiz.get_node("Timer60")
 @onready var sonidomoto = nodo_raiz.get_node("Audio/MotosierraSonido")
@@ -17,6 +18,10 @@ func _process(_delta):
 	tiempo_restante = timersixty.tiempo_restante
 	if tiempo_restante == nuevogato || (tiempo_restante+1) == nuevogato:
 		self.visible=true
-		sonidomoto.play()
+		if not onplay:
+			onplay=true
+			sonidomoto.play()
 	else:
 		self.visible = false
+		onplay=false
+		sonidomoto.stop()
