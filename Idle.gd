@@ -6,9 +6,6 @@ var tiempo_restante: int
 @onready var nodo_raiz = get_node("/root/game_scene")
 @onready var timersixty = nodo_raiz.get_node("Timer60")
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

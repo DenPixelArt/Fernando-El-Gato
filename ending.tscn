@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://3waqdwgfdecw"]
+[gd_scene load_steps=12 format=3 uid="uid://3waqdwgfdecw"]
 
+[ext_resource type="Script" path="res://ending.gd" id="1_uua6b"]
 [ext_resource type="Texture2D" uid="uid://dj6fx8flv1yly" path="res://Assets/2. - PixelArt/Corcho.png" id="1_wvtyv"]
 [ext_resource type="Script" path="res://EndingLayer.gd" id="2_7fnrx"]
 [ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_vtgh1"]
@@ -12,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cv8jxuwbybgeo" path="res://Assets/6. - Fotografias/FotoMotosierra.png" id="10_lul3a"]
 
 [node name="Ending" type="Node"]
+script = ExtResource("1_uua6b")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0

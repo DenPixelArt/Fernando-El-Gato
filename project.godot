@@ -13,7 +13,6 @@ config_version=5
 config/name="Fernando El Gato"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://Assets/2. - PixelArt/Icono.png"
 
 [autoload]
 

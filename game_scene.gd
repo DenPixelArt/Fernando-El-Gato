@@ -10,6 +10,7 @@ var nuevogato = ["49 S", "34 S", "20 S", "10 S", "2 S"]
 var timerlabel: int
 var gatosobtenidos = []
 @onready var gato = $Gato
+@onready var nodo_raiz = get_node("/root/game_scene")
 
 func _ready():
 	pestanas = $Pestaneo
@@ -21,6 +22,7 @@ func _ready():
 	timerlabel = $Timer60.tiempo_restante
 	pestanas.visible = true
 	camarafotos.visible = false
+	
 	
 func start_game():
 	onesec.start()
@@ -40,8 +42,6 @@ func _on_timer_pestaneo_timeout():
 	timerviendo.start()
 
 func _on_timer_game_timeout():
-	for item in gatosobtenidos:
-		print(item)
 	get_tree().change_scene_to_file("res://ending.tscn")
 
 
