@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4d8egt61ff8n"]
+[gd_scene load_steps=3 format=3 uid="uid://c4d8egt61ff8n"]
 
 [ext_resource type="AudioStream" uid="uid://c3tard4fvb8c8" path="res://Assets/5. - Music/Musicamal.wav" id="1_4hvv5"]
+[ext_resource type="AudioStream" uid="uid://dmgk4su7jvsvo" path="res://Assets/5. - Music/MermeladaJam.wav" id="2_hcdjq"]
 
-[node name="Music" type="AudioStreamPlayer"]
+[node name="Intro" type="AudioStreamPlayer"]
 stream = ExtResource("1_4hvv5")
 volume_db = -17.0
+autoplay = true
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_hcdjq")
+volume_db = -10.0
 autoplay = true

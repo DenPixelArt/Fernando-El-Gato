@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cyrhe8wqfud56"]
+[gd_scene load_steps=56 format=3 uid="uid://cyrhe8wqfud56"]
 
 [ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
 [ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://jemn7hojbye3" path="res://Assets/2. - PixelArt/Camara.png" id="21_rjhtg"]
 [ext_resource type="Texture2D" uid="uid://dupv0vc58wyo2" path="res://Assets/1. - 3D art/mano/mano_mano_DefaultMaterial_Normal.png" id="22_hb6p2"]
 [ext_resource type="Script" path="res://Timer60.gd" id="28_nsxxb"]
+[ext_resource type="PackedScene" uid="uid://u6phhr66aokp" path="res://audio.tscn" id="29_1jn4q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0nn2"]
 albedo_texture = ExtResource("1_87lkw")
@@ -870,6 +871,8 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="OneSec" type="Timer" parent="."]
+
+[node name="Audio" parent="." instance=ExtResource("29_1jn4q")]
 
 [connection signal="timeout" from="TimerViendo" to="." method="_on_timer_viendo_timeout"]
 [connection signal="timeout" from="TimerPestaneo" to="." method="_on_timer_pestaneo_timeout"]

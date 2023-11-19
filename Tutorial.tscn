@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://06vs5xrc2lxa"]
+[gd_scene load_steps=9 format=3 uid="uid://06vs5xrc2lxa"]
 
 [ext_resource type="Script" path="res://CanvasLayerTuto.gd" id="1_j8fiy"]
 [ext_resource type="FontFile" uid="uid://c3okmqy26eqwm" path="res://Assets/3. - Fonts/upheavtt.ttf" id="2_k1yx6"]
+[ext_resource type="PackedScene" uid="uid://u6phhr66aokp" path="res://audio.tscn" id="3_0g1vx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfqhp"]
-bg_color = Color(0.568627, 0.317647, 0.192157, 1)
+bg_color = Color(0.364706, 0.14902, 0.0588235, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -15,7 +16,7 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sheso"]
-bg_color = Color(0.811765, 0.419608, 0.360784, 1)
+bg_color = Color(0.627451, 0.380392, 0.258824, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -26,7 +27,7 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc30i"]
-bg_color = Color(0.568627, 0.317647, 0.192157, 1)
+bg_color = Color(0.364706, 0.14902, 0.0588235, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -37,7 +38,7 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhx4r"]
-bg_color = Color(0.615686, 0.360784, 0.305882, 1)
+bg_color = Color(0.168627, 0.0862745, 0.0941176, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
@@ -50,9 +51,11 @@ corner_radius_bottom_left = 16
 [sub_resource type="Theme" id="Theme_opsl4"]
 default_font = ExtResource("2_k1yx6")
 default_font_size = 60
+Button/colors/font_color = Color(0.886275, 0.827451, 0.811765, 1)
 Button/styles/hover = SubResource("StyleBoxFlat_cfqhp")
 Button/styles/normal = SubResource("StyleBoxFlat_sheso")
 Button/styles/pressed = SubResource("StyleBoxFlat_jc30i")
+Label/colors/font_color = Color(0.886275, 0.827451, 0.811765, 1)
 MarginContainer/styles/panel = null
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qhx4r")
 
@@ -101,8 +104,9 @@ layout_mode = 2
 text = "¡es momento de sacar fotos
 a tu gato Fernando!
 
-Intenta sacarle una foto cuando 
-haga algo gracioso. Usa el botón .
+Intenta sacarle una foto cada vez que 
+haga algo gracioso en un minuto. 
+Usa el botón .
 
 cada 5 segundos pestañearás 
 automáticamente durante 2 segundos. 
@@ -118,5 +122,7 @@ horizontal_alignment = 1
 [node name="ButtonEntendido" type="Button" parent="tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "ENTENDIDO"
+
+[node name="Audio" parent="." instance=ExtResource("3_0g1vx")]
 
 [connection signal="pressed" from="tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonEntendido" to="." method="_on_button_entendido_pressed"]

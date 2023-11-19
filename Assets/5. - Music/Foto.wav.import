@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdakawaxyidvh"
+path="res://.godot/imported/Foto.wav-c2058597359ebbda903d14dfcc7b515a.sample"
+
+[deps]
+
+source_file="res://Assets/5. - Music/Foto.wav"
+dest_files=["res://.godot/imported/Foto.wav-c2058597359ebbda903d14dfcc7b515a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

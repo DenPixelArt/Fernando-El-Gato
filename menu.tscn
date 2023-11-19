@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://76bpelgf73xu"]
+[gd_scene load_steps=6 format=3 uid="uid://76bpelgf73xu"]
 
 [ext_resource type="Texture2D" uid="uid://x3dcl1doei2d" path="res://Assets/2. - PixelArt/Menu.png" id="1_wsjob"]
 [ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_1hj8m"]
 [ext_resource type="Script" path="res://CanvasLayer.gd" id="2_8jwj2"]
 [ext_resource type="PackedScene" uid="uid://bxak6vbcnfdu4" path="res://volume_slider.tscn" id="4_1753f"]
+[ext_resource type="PackedScene" uid="uid://u6phhr66aokp" path="res://audio.tscn" id="5_dhyw3"]
 
 [node name="Menu" type="Node"]
 
@@ -59,16 +60,19 @@ theme_override_constants/separation = 10
 [node name="ButtonPlay" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+action_mode = 0
 text = "Play"
 
 [node name="ButtonSettings" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+action_mode = 0
 text = "Settings"
 
 [node name="ButtonQuit" type="Button" parent="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+action_mode = 0
 text = "Quit"
 
 [node name="Settings" type="Control" parent="CanvasLayer"]
@@ -136,7 +140,10 @@ bus_name = "Master"
 [node name="ButtonSettingsBack" type="Button" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+action_mode = 0
 text = "Back"
+
+[node name="Audio" parent="." instance=ExtResource("5_dhyw3")]
 
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonSettings" to="CanvasLayer" method="_on_button_settings_pressed"]

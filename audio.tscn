@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://u6phhr66aokp"]
+
+[ext_resource type="AudioStream" uid="uid://owdbnsv76p7i" path="res://Assets/5. - Music/Motillo.wav" id="1_0ni6t"]
+[ext_resource type="AudioStream" uid="uid://fet5yjrecqi5" path="res://Assets/5. - Music/Sierra.wav" id="2_20ecl"]
+[ext_resource type="AudioStream" uid="uid://cyyb5gl4px848" path="res://Assets/5. - Music/Flor.wav" id="3_7w86l"]
+[ext_resource type="AudioStream" uid="uid://gpfkasy36rp3" path="res://Assets/5. - Music/Leer.wav" id="4_3b01q"]
+[ext_resource type="AudioStream" uid="uid://cqwjipnogfpo5" path="res://Assets/5. - Music/Malabares.wav" id="5_4d6vn"]
+[ext_resource type="AudioStream" uid="uid://cdakawaxyidvh" path="res://Assets/5. - Music/Foto.wav" id="6_3hy5a"]
+[ext_resource type="AudioStream" uid="uid://dwf5pa4pt4fuh" path="res://Assets/5. - Music/boton_sonido.wav" id="7_ibw4u"]
+
+[node name="Audio" type="Node"]
+
+[node name="MotocicletaSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_0ni6t")
+volume_db = 2.0
+
+[node name="MotosierraSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_20ecl")
+volume_db = 2.0
+
+[node name="FlorSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7w86l")
+volume_db = 6.0
+
+[node name="LeerSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3b01q")
+volume_db = 4.0
+
+[node name="MalabaresSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_4d6vn")
+volume_db = 4.0
+
+[node name="FotoSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_3hy5a")
+volume_db = 10.0
+
+[node name="BotonSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ibw4u")
+volume_db = 5.0

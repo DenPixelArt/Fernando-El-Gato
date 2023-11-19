@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://3waqdwgfdecw"]
+[gd_scene load_steps=5 format=3 uid="uid://3waqdwgfdecw"]
 
 [ext_resource type="Texture2D" uid="uid://dj6fx8flv1yly" path="res://Assets/2. - PixelArt/Corcho.png" id="1_wvtyv"]
 [ext_resource type="Script" path="res://EndingLayer.gd" id="2_7fnrx"]
 [ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_vtgh1"]
+[ext_resource type="PackedScene" uid="uid://u6phhr66aokp" path="res://audio.tscn" id="4_e8n1c"]
 
 [node name="Ending" type="Node"]
 
@@ -58,6 +59,8 @@ text = "reintentar"
 layout_mode = 2
 text = "Quit
 "
+
+[node name="Audio" parent="." instance=ExtResource("4_e8n1c")]
 
 [connection signal="pressed" from="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonRetry" to="EndingLayer" method="_on_button_retry_pressed"]
 [connection signal="pressed" from="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Buttonquit" to="EndingLayer" method="_on_buttonquit_pressed"]
