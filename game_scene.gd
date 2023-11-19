@@ -6,12 +6,12 @@ var timer: Timer
 
 func _ready():
 	sprite3d = $Pestaneo
-	timer = $Timer
+	timer = $TimerPestaneo
 	camera = $Marker3D/Camera3D
-	sprite3d.visible = false
+	sprite3d.visible = true
 
 	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
-
+	
 	timer.start()    
 
 func _on_timer_timeout():

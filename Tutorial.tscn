@@ -1,9 +1,62 @@
-[gd_scene load_steps=3 format=3 uid="uid://06vs5xrc2lxa"]
+[gd_scene load_steps=8 format=3 uid="uid://06vs5xrc2lxa"]
 
 [ext_resource type="Script" path="res://CanvasLayerTuto.gd" id="1_j8fiy"]
-[ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_x7noo"]
+[ext_resource type="FontFile" uid="uid://c3okmqy26eqwm" path="res://Assets/3. - Fonts/upheavtt.ttf" id="2_k1yx6"]
 
-[node name="Node" type="Node"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfqhp"]
+bg_color = Color(0.568627, 0.317647, 0.192157, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sheso"]
+bg_color = Color(0.811765, 0.419608, 0.360784, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc30i"]
+bg_color = Color(0.568627, 0.317647, 0.192157, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhx4r"]
+bg_color = Color(0.615686, 0.360784, 0.305882, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="Theme" id="Theme_epnk4"]
+default_font = ExtResource("2_k1yx6")
+default_font_size = 60
+Button/styles/hover = SubResource("StyleBoxFlat_cfqhp")
+Button/styles/normal = SubResource("StyleBoxFlat_sheso")
+Button/styles/pressed = SubResource("StyleBoxFlat_jc30i")
+MarginContainer/styles/panel = null
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_qhx4r")
+
+[node name="tutorial" type="Node"]
 
 [node name="CanvasLayerTuto" type="CanvasLayer" parent="."]
 script = ExtResource("1_j8fiy")
@@ -15,7 +68,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_x7noo")
+theme = SubResource("Theme_epnk4")
 metadata/_edit_use_anchors_ = true
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayerTuto/tuto"]
@@ -51,15 +104,21 @@ text = "¡es momento de sacar fotos
 a tu gato Fernando!
 
 Intenta sacarle una foto cuando 
-haga algo gracioso con el 
-botón .
+haga algo gracioso. Usa el botón .
 
 cada 5 segundos pestañearás 
 automáticamente durante 2 segundos. 
-Puedes pestañear antes de tiempo 
-con el botón .
+Puedes pestañear antes de tiempo con 
+el botón .
 
-Así podrás tener la vista descansada
-Para cuando Fernando haga de las
-suyas.
+Si estás pestañeando no puedes sacar
+fotos. intenta sacar todas las fotos
+graciosas de fernando.
 "
+horizontal_alignment = 1
+
+[node name="ButtonEntendido" type="Button" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "ENTENDIDO"
+
+[connection signal="pressed" from="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonEntendido" to="CanvasLayerTuto" method="_on_button_entendido_pressed"]

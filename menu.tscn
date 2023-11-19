@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://76bpelgf73xu"]
+[gd_scene load_steps=5 format=3 uid="uid://76bpelgf73xu"]
 
 [ext_resource type="Texture2D" uid="uid://x3dcl1doei2d" path="res://Assets/2. - PixelArt/Menu.png" id="1_wsjob"]
 [ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_1hj8m"]
 [ext_resource type="Script" path="res://CanvasLayer.gd" id="2_8jwj2"]
+[ext_resource type="PackedScene" uid="uid://bxak6vbcnfdu4" path="res://volume_slider.tscn" id="4_1753f"]
 
 [node name="Menu" type="Node"]
 
@@ -121,18 +122,16 @@ vertical_alignment = 1
 [node name="Label2" type="Label" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "Lo siento profe, 
-no encontré tutorial"
+text = "No quedan settings, ninio,
+Solo control del volumen"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="volume_slider" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_1753f")]
+modulate = Color(1, 0.196078, 0.145098, 1)
+self_modulate = Color(1, 0.196078, 0.145098, 1)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "
-"
-horizontal_alignment = 1
-vertical_alignment = 1
+bus_name = "Master"
 
 [node name="ButtonSettingsBack" type="Button" parent="CanvasLayer/Settings/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
