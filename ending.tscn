@@ -1,9 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://3waqdwgfdecw"]
+[gd_scene load_steps=11 format=3 uid="uid://3waqdwgfdecw"]
 
 [ext_resource type="Texture2D" uid="uid://dj6fx8flv1yly" path="res://Assets/2. - PixelArt/Corcho.png" id="1_wvtyv"]
 [ext_resource type="Script" path="res://EndingLayer.gd" id="2_7fnrx"]
 [ext_resource type="Theme" uid="uid://bq2t7rqpmh0j6" path="res://Assets/4. - Themes/UpheavttTheme.tres" id="2_vtgh1"]
 [ext_resource type="PackedScene" uid="uid://u6phhr66aokp" path="res://audio.tscn" id="4_e8n1c"]
+[ext_resource type="Texture2D" uid="uid://02pu3g3gkvau" path="res://Assets/6. - Fotografias/FotoFlor.png" id="5_l6we2"]
+[ext_resource type="Texture2D" uid="uid://ccydxhvrvw4t0" path="res://Assets/2. - PixelArt/Tick.png" id="6_h88nx"]
+[ext_resource type="Texture2D" uid="uid://b18w2wfl2cbsb" path="res://Assets/6. - Fotografias/FotoLibro.png" id="7_01k78"]
+[ext_resource type="Texture2D" uid="uid://cdvbrnn2vtipf" path="res://Assets/6. - Fotografias/FotoMalabares.png" id="8_yxpdw"]
+[ext_resource type="Texture2D" uid="uid://gc130yufqk6t" path="res://Assets/6. - Fotografias/FotoMotocicleta.png" id="9_xnuwh"]
+[ext_resource type="Texture2D" uid="uid://cv8jxuwbybgeo" path="res://Assets/6. - Fotografias/FotoMotosierra.png" id="10_lul3a"]
 
 [node name="Ending" type="Node"]
 
@@ -47,8 +53,9 @@ layout_mode = 2
 layout_mode = 2
 text = "¡GRACIAS POR JUGAR!
 
-Has sacado fotos de 
-un total de 5"
+Estas son las fotos
+que has sacado.
+¿Tienes todaS? "
 horizontal_alignment = 1
 
 [node name="ButtonRetry" type="Button" parent="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
@@ -61,6 +68,86 @@ text = "Quit
 "
 
 [node name="Audio" parent="." instance=ExtResource("4_e8n1c")]
+
+[node name="FotoFlor" type="TextureRect" parent="."]
+offset_left = 129.0
+offset_top = 605.0
+offset_right = 494.0
+offset_bottom = 935.0
+texture = ExtResource("5_l6we2")
+expand_mode = 1
+
+[node name="TickFlor" type="TextureRect" parent="FotoFlor"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 254.0
+offset_right = 430.0
+offset_bottom = 414.0
+texture = ExtResource("6_h88nx")
+
+[node name="FotoLibro" type="TextureRect" parent="."]
+offset_left = 779.0
+offset_top = 607.0
+offset_right = 1144.0
+offset_bottom = 937.0
+texture = ExtResource("7_01k78")
+expand_mode = 1
+
+[node name="TickLibro" type="TextureRect" parent="FotoLibro"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 248.0
+offset_right = 440.0
+offset_bottom = 408.0
+texture = ExtResource("6_h88nx")
+
+[node name="FotoMalabares" type="TextureRect" parent="."]
+offset_left = 1429.0
+offset_top = 131.0
+offset_right = 1794.0
+offset_bottom = 461.0
+texture = ExtResource("8_yxpdw")
+expand_mode = 1
+
+[node name="TickMalabares" type="TextureRect" parent="FotoMalabares"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 252.0
+offset_right = 430.0
+offset_bottom = 412.0
+texture = ExtResource("6_h88nx")
+
+[node name="FotoMotocicleta" type="TextureRect" parent="."]
+offset_left = 125.0
+offset_top = 127.0
+offset_right = 490.0
+offset_bottom = 457.0
+texture = ExtResource("9_xnuwh")
+expand_mode = 1
+
+[node name="TickMotocicleta" type="TextureRect" parent="FotoMotocicleta"]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 254.0
+offset_right = 436.0
+offset_bottom = 414.0
+texture = ExtResource("6_h88nx")
+
+[node name="FotoMotosierra" type="TextureRect" parent="."]
+offset_left = 1427.0
+offset_top = 609.0
+offset_right = 1792.0
+offset_bottom = 939.0
+texture = ExtResource("10_lul3a")
+expand_mode = 1
+
+[node name="TickMotosierra" type="TextureRect" parent="FotoMotosierra"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 254.0
+offset_right = 438.0
+offset_bottom = 414.0
+texture = ExtResource("6_h88nx")
 
 [connection signal="pressed" from="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonRetry" to="EndingLayer" method="_on_button_retry_pressed"]
 [connection signal="pressed" from="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Buttonquit" to="EndingLayer" method="_on_buttonquit_pressed"]
