@@ -11,6 +11,8 @@ var timerlabel: int
 var gatosobtenidos = []
 @onready var gato = $Gato
 @onready var nodo_raiz = get_node("/root/game_scene")
+@onready var sonidofoto = get_node("./Audio/FotoSonido")
+
 
 func _ready():
 	pestanas = $Pestaneo
@@ -42,6 +44,9 @@ func _on_timer_pestaneo_timeout():
 	timerviendo.start()
 
 func _on_timer_game_timeout():
+	for child in gatosobtenidos:
+		Resultado.gatosfotografiados = child
+		
 	get_tree().change_scene_to_file("res://ending.tscn")
 
 
@@ -55,6 +60,8 @@ func _process(_delta):
 		timerviendo.stop()
 		_on_timer_viendo_timeout()
 	if Input.is_action_pressed("Fotografiar") and !pestanas.visible:
+		sonidofoto.play()
+		$habitacion/CamaraFotos/mano/animation_mano.play("EsqueletoAction")
 		for child in gato.get_children():
 			if child is Sprite3D and child.visible and child not in gatosobtenidos:
 				gatosobtenidos.append(child)

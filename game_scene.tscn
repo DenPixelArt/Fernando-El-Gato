@@ -577,11 +577,10 @@ material_override = SubResource("StandardMaterial3D_dop6d")
 mesh = ExtResource("17_5n61d")
 skeleton = NodePath("../..")
 
-[node name="mano" type="Node3D" parent="habitacion/CamaraFotos"]
-transform = Transform3D(1, 0.000873066, -0.000735566, -0.000872772, 0.999999, 0.000681356, 0.000736117, -0.000679925, 0.999999, 0.000111759, -0.000345349, 0.000278711)
+[node name="mano" type="Sprite3D" parent="habitacion/CamaraFotos"]
 
 [node name="Esqueleto" type="Node3D" parent="habitacion/CamaraFotos/mano"]
-transform = Transform3D(-0.021427, 0.000570977, -0.0631005, -0.0604903, 0.0187909, 0.0207107, -0.0179698, -0.063935, 0.00552347, -0.1849, 0.455627, 2.71519)
+transform = Transform3D(-0.0214666, 0.000634413, -0.0630865, -0.0604838, 0.0187468, 0.0207695, -0.0179444, -0.0639473, 0.00546293, -0.186388, 0.457293, 2.71502)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="habitacion/CamaraFotos/mano/Esqueleto"]
 bones/0/name = "Bone"

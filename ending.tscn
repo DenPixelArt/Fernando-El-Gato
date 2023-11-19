@@ -72,6 +72,7 @@ text = "Quit
 [node name="Audio" parent="." instance=ExtResource("4_e8n1c")]
 
 [node name="FotoFlor" type="TextureRect" parent="."]
+visible = false
 offset_left = 129.0
 offset_top = 605.0
 offset_right = 494.0
@@ -88,6 +89,7 @@ offset_bottom = 414.0
 texture = ExtResource("6_h88nx")
 
 [node name="FotoLibro" type="TextureRect" parent="."]
+visible = false
 offset_left = 779.0
 offset_top = 607.0
 offset_right = 1144.0
@@ -104,6 +106,7 @@ offset_bottom = 408.0
 texture = ExtResource("6_h88nx")
 
 [node name="FotoMalabares" type="TextureRect" parent="."]
+visible = false
 offset_left = 1429.0
 offset_top = 131.0
 offset_right = 1794.0
@@ -120,6 +123,7 @@ offset_bottom = 412.0
 texture = ExtResource("6_h88nx")
 
 [node name="FotoMotocicleta" type="TextureRect" parent="."]
+visible = false
 offset_left = 125.0
 offset_top = 127.0
 offset_right = 490.0
@@ -136,6 +140,7 @@ offset_bottom = 414.0
 texture = ExtResource("6_h88nx")
 
 [node name="FotoMotosierra" type="TextureRect" parent="."]
+visible = false
 offset_left = 1427.0
 offset_top = 609.0
 offset_right = 1792.0
