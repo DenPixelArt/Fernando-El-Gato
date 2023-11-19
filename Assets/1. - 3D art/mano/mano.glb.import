@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dmqn3ein5kavh"
-path="res://.godot/imported/mano.fbx-e79b15ad7efb07009b270e8cc5421cf0.scn"
+uid="uid://0avn6fe61xi0"
+path="res://.godot/imported/mano.glb-4fad19187d152888c69ac42aedca0a17.scn"
 
 [deps]
 
-source_file="res://Assets/1. - 3D art/mano.fbx"
-dest_files=["res://.godot/imported/mano.fbx-e79b15ad7efb07009b270e8cc5421cf0.scn"]
+source_file="res://Assets/1. - 3D art/mano/mano.glb"
+dest_files=["res://.godot/imported/mano.glb-4fad19187d152888c69ac42aedca0a17.scn"]
 
 [params]
 
