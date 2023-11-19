@@ -47,7 +47,7 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="Theme" id="Theme_epnk4"]
+[sub_resource type="Theme" id="Theme_opsl4"]
 default_font = ExtResource("2_k1yx6")
 default_font_size = 60
 Button/styles/hover = SubResource("StyleBoxFlat_cfqhp")
@@ -56,22 +56,20 @@ Button/styles/pressed = SubResource("StyleBoxFlat_jc30i")
 MarginContainer/styles/panel = null
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qhx4r")
 
-[node name="tutorial" type="Node"]
-
-[node name="CanvasLayerTuto" type="CanvasLayer" parent="."]
+[node name="CanvasLayerTuto" type="CanvasLayer"]
 script = ExtResource("1_j8fiy")
 
-[node name="tuto" type="Control" parent="CanvasLayerTuto"]
+[node name="tuto" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_epnk4")
+theme = SubResource("Theme_opsl4")
 metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayerTuto/tuto"]
+[node name="CenterContainer" type="CenterContainer" parent="tuto"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -83,22 +81,22 @@ offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayerTuto/tuto/CenterContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="tuto/CenterContainer"]
 custom_minimum_size = Vector2(960, 800)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="tuto/CenterContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="tuto/CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "¡es momento de sacar fotos
 a tu gato Fernando!
@@ -117,8 +115,8 @@ graciosas de fernando.
 "
 horizontal_alignment = 1
 
-[node name="ButtonEntendido" type="Button" parent="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="ButtonEntendido" type="Button" parent="tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "ENTENDIDO"
 
-[connection signal="pressed" from="CanvasLayerTuto/tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonEntendido" to="CanvasLayerTuto" method="_on_button_entendido_pressed"]
+[connection signal="pressed" from="tuto/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonEntendido" to="." method="_on_button_entendido_pressed"]
