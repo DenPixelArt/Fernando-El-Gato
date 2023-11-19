@@ -136,7 +136,7 @@ transform = Transform3D(0.999867, 0.0147283, 0.00697068, -0.0156816, 0.985986, 0
 visible = false
 texture = ExtResource("6_wjwpp")
 
-[node name="Camara" type="MeshInstance3D" parent="."]
+[node name="CamaraFotos" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.966355, 0.0155002, 0.256743, -0.0544675, 0.987877, 0.14537, -0.251377, -0.154464, 0.955485, -0.0156811, -0.292718, -1.69254)
 mesh = ExtResource("17_5n61d")
 
@@ -151,6 +151,8 @@ transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0.4424
 light_energy = 0.2
 
 [node name="tutorial" parent="." instance=ExtResource("19_eu1i1")]
+
+[node name="Gato" type="Node3D" parent="."]
 
 [connection signal="timeout" from="TimerViendo" to="." method="_on_timer_viendo_timeout"]
 [connection signal="timeout" from="TimerPestaneo" to="." method="_on_timer_pestaneo_timeout"]

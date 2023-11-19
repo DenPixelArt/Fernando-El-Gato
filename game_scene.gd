@@ -1,31 +1,33 @@
 extends Node
 
-var sprite3d: Sprite3D
-var camera: Camera3D
+var pestanas: Sprite3D
+var camarafotos
 var timerviendo: Timer
 var timerpestaneando: Timer
 
 func _ready():
-	sprite3d = $Pestaneo
+	pestanas = $Pestaneo
 	timerviendo = $TimerViendo
 	timerpestaneando = $TimerPestaneo
-	camera = $Marker3D/Camera3D
-	sprite3d.visible = true
+	camarafotos = $CamaraFotos
+	pestanas.visible = true
+	camarafotos.visible = false
 	
 func start_game():
-	sprite3d.visible = false
+	pestanas.visible = false
+	camarafotos.visible = true
 	timerviendo.start()
 	
 func _on_timer_viendo_timeout():
-	sprite3d.visible = true
+	pestanas.visible = true
+	camarafotos.visible = false
 	timerpestaneando.start()
 
 func _on_timer_pestaneo_timeout():
-	sprite3d.visible = false
+	pestanas.visible = false
+	camarafotos.visible = true
 	timerviendo.start()
 
-func _on_display_timer_timeout():
-	sprite3d.visible = false
 
 
 

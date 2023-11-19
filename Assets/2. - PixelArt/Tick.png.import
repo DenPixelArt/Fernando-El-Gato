@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqr5gw0v5gu2x"
-path="res://.godot/imported/Gato-Sheet.png-20b8b92e9e0ac54c3488d772d855612d.ctex"
+uid="uid://ccydxhvrvw4t0"
+path="res://.godot/imported/Tick.png-5525ec6823bbf001ce7b3a215fd6e043.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2. - PixelArt/Gato-Sheet.png"
-dest_files=["res://.godot/imported/Gato-Sheet.png-20b8b92e9e0ac54c3488d772d855612d.ctex"]
+source_file="res://Assets/2. - PixelArt/Tick.png"
+dest_files=["res://.godot/imported/Tick.png-5525ec6823bbf001ce7b3a215fd6e043.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
