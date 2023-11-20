@@ -12,3 +12,6 @@ stream = ExtResource("2_t5xrc")
 
 [node name="BandaSonora" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_fitc4")
+
+[connection signal="finished" from="FernandoElGato" to="." method="_on_fernando_el_gato_finished"]
+[connection signal="finished" from="BandaSonora" to="." method="_on_banda_sonora_finished"]
