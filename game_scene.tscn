@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://cyrhe8wqfud56"]
+[gd_scene load_steps=63 format=3 uid="uid://cyrhe8wqfud56"]
 
 [ext_resource type="Texture2D" uid="uid://b4neicnvjtice" path="res://Assets/1. - 3D art/textures/Pared.png" id="1_87lkw"]
 [ext_resource type="Script" path="res://game_scene.gd" id="1_vnk17"]
@@ -35,6 +35,7 @@
 [ext_resource type="Script" path="res://Motocicleta.gd" id="31_or4qh"]
 [ext_resource type="Script" path="res://Flor.gd" id="32_ftwd5"]
 [ext_resource type="Script" path="res://Malabares.gd" id="33_nr6q0"]
+[ext_resource type="AudioStream" uid="uid://cdakawaxyidvh" path="res://Assets/5. - Music/Foto.wav" id="36_1wqll"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0nn2"]
 albedo_texture = ExtResource("1_87lkw")
@@ -885,9 +886,13 @@ uppercase = true
 
 [node name="Audio" parent="." instance=ExtResource("29_1jn4q")]
 
+[node name="FotoSonido" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_1wqll")
+
 [connection signal="timeout" from="TimerViendo" to="." method="_on_timer_viendo_timeout"]
 [connection signal="timeout" from="TimerPestaneo" to="." method="_on_timer_pestaneo_timeout"]
 [connection signal="start_game" from="tutorial" to="." method="start_game"]
 [connection signal="timeout" from="TimerGame" to="." method="_on_timer_game_timeout"]
 [connection signal="timeout" from="OneSec" to="." method="_on_one_sec_timeout"]
 [connection signal="timeout" from="OneSec" to="Timer60" method="_on_one_sec_timeout"]
+[connection signal="finished" from="FotoSonido" to="." method="_on_foto_sonido_finished"]

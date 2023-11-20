@@ -12,7 +12,7 @@ var gatosobtenidos = []
 var echandofoto = false
 @onready var gato = $Gato
 @onready var nodo_raiz = get_node("/root/game_scene")
-@onready var sonidofoto = get_node("./Audio/FotoSonido")
+@onready var sonidoFoto = nodo_raiz.get_node("FotoSonido")
 
 
 func _ready():
@@ -56,18 +56,21 @@ func _on_one_sec_timeout():
 	timerlabel = $Timer60.tiempo_restante
 
 func _echar_foto():
-	if not echandofoto:
-		echandofoto=true
-		sonidofoto.play()
-		$habitacion/CamaraFotos/mano/animation_mano.play("EsqueletoAction")
-		for child in gato.get_children():
-			if child is Sprite3D and child.visible and child not in gatosobtenidos:
-				gatosobtenidos.append(child.id)
-	echandofoto=false
+	$habitacion/CamaraFotos/mano/animation_mano.play("EsqueletoAction")
+	sonidoFoto.play()
+	for child in gato.get_children():
+		if child is Sprite3D and child.visible and child not in gatosobtenidos:
+			gatosobtenidos.append(child.id)
 
 func _process(_delta):
 	if Input.is_action_pressed("Pestanear") and !pestanas.visible:
 		timerviendo.stop()
 		_on_timer_viendo_timeout()
 	if Input.is_action_pressed("Fotografiar") and !pestanas.visible:
-		_echar_foto()
+		if not echandofoto:
+			echandofoto = true
+			_echar_foto()
+			
+		
+func _on_foto_sonido_finished():
+	echandofoto=false
