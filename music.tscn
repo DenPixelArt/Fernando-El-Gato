@@ -6,9 +6,7 @@
 [node name="Intro" type="AudioStreamPlayer"]
 stream = ExtResource("1_4hvv5")
 volume_db = -17.0
-autoplay = true
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_hcdjq")
 volume_db = 5.0
-autoplay = true

@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk0tsdfyfpm34"]
+[gd_scene load_steps=4 format=3 uid="uid://bk0tsdfyfpm34"]
 
 [ext_resource type="Script" path="res://Resultado.gd" id="1_chsyx"]
+[ext_resource type="AudioStream" uid="uid://c3tard4fvb8c8" path="res://Assets/5. - Music/Musicamal.wav" id="2_t5xrc"]
+[ext_resource type="AudioStream" uid="uid://dmgk4su7jvsvo" path="res://Assets/5. - Music/MermeladaJam.wav" id="3_fitc4"]
 
 [node name="Resultado" type="Node"]
 script = ExtResource("1_chsyx")
+
+[node name="FernandoElGato" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_t5xrc")
+
+[node name="BandaSonora" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fitc4")
