@@ -10,10 +10,11 @@ var nuevogato = ["49 S", "34 S", "20 S", "10 S", "2 S"]
 var timerlabel: int
 var gatosobtenidos = []
 var echandofoto = false
+var firstime = Resultado.firstime
 @onready var gato = $Gato
 @onready var nodo_raiz = get_node("/root/game_scene")
 @onready var sonidoFoto = nodo_raiz.get_node("FotoSonido")
-
+@onready var tuto = nodo_raiz.get_node("tutorial")
 
 func _ready():
 	pestanas = $Pestaneo
@@ -23,15 +24,22 @@ func _ready():
 	camarafotos = $habitacion/CamaraFotos
 	onesec = $OneSec
 	timerlabel = $Timer60.tiempo_restante
-	pestanas.visible = true
-	camarafotos.visible = false
-	Resultado.gatosfotografiados.clear()
+	if firstime:
+		pestanas.visible = false
+		camarafotos.visible=true
+		tuto.visible = true
+		Resultado.firstime = false
+	else:
+		tuto.visible = false
+		pestanas.visible = false
+		start_game()
+		
+	
 	
 	
 func start_game():
+	Resultado.gatosfotografiados.clear()
 	onesec.start()
-	pestanas.visible = false
-	camarafotos.visible = true
 	timerviendo.start()
 	timergame.start()
 	
