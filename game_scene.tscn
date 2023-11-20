@@ -503,6 +503,7 @@ script = ExtResource("1_vnk17")
 
 [node name="Camera3D" type="Camera3D" parent="Marker3D"]
 transform = Transform3D(1, 0, 0, 0, 0.971977, 0.235074, 0, -0.235074, 0.971977, 0.360849, 0.797747, 0.88181)
+current = true
 fov = 52.5
 
 [node name="habitacion" type="StaticBody3D" parent="."]
