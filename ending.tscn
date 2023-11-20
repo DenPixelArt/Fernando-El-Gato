@@ -33,10 +33,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="CenterContainer" type="CenterContainer" parent="EndingLayer/corcho"]
 layout_mode = 0
-offset_left = 637.0
+offset_left = 590.0
 offset_top = 126.0
-offset_right = 1297.0
-offset_bottom = 486.0
+offset_right = 1342.0
+offset_bottom = 540.0
 
 [node name="PanelContainer" type="PanelContainer" parent="EndingLayer/corcho/CenterContainer"]
 layout_mode = 2
@@ -57,7 +57,7 @@ text = "¡GRACIAS POR JUGAR!
 
 Estas son las fotos
 que has sacado.
-¿Tienes todaS? "
+¿conseguiste todaS? "
 horizontal_alignment = 1
 
 [node name="ButtonRetry" type="Button" parent="EndingLayer/corcho/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
